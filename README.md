@@ -15,6 +15,7 @@ The 2014–2024 window is deliberate — it's the V6 turbo-hybrid era, a single 
 - **59 drivers, 228 races, 11 seasons** (2014–2024)
 - Per-driver, per-race grid position, finish position, points, and DNF status
 - Joined from 7 source files (races, results, qualifying, drivers, constructors, status, circuits) from the Kaggle "Formula 1 World Championship 1950–2024" dataset (Ergast API)
+- **Data Source:** [Formula 1 World Championship 1950–2024 (Ergast API)](https://www.kaggle.com/datasets/rohanrao/formula-1-world-championship-1950-2020) (Kaggle)
 
 ## Methodology
 
@@ -22,7 +23,6 @@ The 2014–2024 window is deliberate — it's the V6 turbo-hybrid era, a single 
 - Computed positions gained/lost per race, then averaged across season and career
 - Filtered to drivers with 30+ starts so the rankings reflect pattern, not single-race noise
 - Cross-tabulated pole conversion by team to isolate car effects from driver effects
-- Tableau for the polished visualization layer
 
 ## Key Findings
 
@@ -40,10 +40,8 @@ The hard part of any performance analysis is separating what's driven by the sys
 - Multi-source data structuring across 4,600+ rows from 7 joined files
 - Pivot table analysis with multiple groupings (driver, team, season, grid position, circuit)
 - Identifying confounding variables (car vs driver effect) and reasoning about them in writing
-- Visual storytelling in Tableau
 
 ## Files
 
-- `F1_Qualifying_vs_Race_Portfolio_4Tab_Final.xlsx` — full dataset, dashboard, and analysis
-- `tableau_dashboard.twbx` — interactive visualization (live version: [Tableau Public link])
+- [`F1_Qualifying_vs_Race_Workbook.xlsx`](./F1_Qualifying_vs_Race_Workbook.xlsx) — full dataset, dashboard, and analysis
 - `README.md` — this file
